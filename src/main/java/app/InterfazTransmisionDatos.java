@@ -17,9 +17,12 @@ import java.awt.*;
 public class InterfazTransmisionDatos extends JFrame
 {
 
-    private JTextField campoBanda, campoNiveles, campoSnr;
+    private JTextField campoBanda;
+    private JTextField  campoNiveles;
+    private JTextField  campoSnr;
     private JButton botonCalcular;
-    private JLabel resultadoNyquist, resultadoShannon;
+    private JLabel resultadoNyquist;
+    private JLabel  resultadoShannon;
     private ChartPanel chartPanel;
 
     /**
@@ -130,7 +133,7 @@ public class InterfazTransmisionDatos extends JFrame
     {
         this.setTitle("Transmisión de Datos");
         this.setSize(1920, 1080);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout());
 
         // Panel superior: controles
